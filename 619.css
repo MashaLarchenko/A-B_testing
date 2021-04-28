@@ -1,4 +1,33 @@
 .adversiting_container {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://github.com/MashaLarchenko/A-B_testing/blob/test1/assets/Horizontal_Small_Image%20only-1x.png");
+}
+
+.adversiting_btn {
+    text-align: left;
+    text-transform: none;
+    font-family: "Helvetica";
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 32px;
+    height: 30px;
+    background: #42b4e6;
+    border-radius: 2px;
+}
+
+.adversiting_title {
+    font-family: "Helvetica";
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.adversiting_description {
+    font-family: "Helvetica";
+    font-size: 14px;
+    color: #e7e6e6;
+    text-align: center;
+    line-height: 20px;
 }
