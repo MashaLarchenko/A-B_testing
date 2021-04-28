@@ -1,72 +1,76 @@
-var UXD_619 = {
+var UXD_610 = {
     config: {
     },
 
     selectors: {
-        productTypesList: '.data-filter-value'
+        productTypesList: '.filter__list',
+        resultContainer: '.pes-filter-results-container',
+        observerSelector: '.products-list',
     },
 
     getNodes: function () {
         this.nodes = {
-            productTypesList: document.querySelectorAll(this.selectors.poductTypesList),
+            productTypesList: document.querySelector(this.selectors.productTypesList),
+            resultContainer: document.querySelector(this.selectors.resultContainer),
+            observerSelector: document.querySelector(this.selectors.observerSelector),
         };
     },
 
-    createAdversitingBlock: function () {
-        var boxNavigationWrapper  = document.createElement('section');
-
-        var productList = this.nodes.productTypesList;
-
-        for(var i = 0; i > productList.length; i++) {
-
-            this.createCardEl(productList.dataset.filterValue, '')
-         
+    createBoxNavigationBlock: function () {
+        if (this.nodes.productTypesList.children) {
+            this.nodes.productList = this.nodes.productTypesList.children;
+            var boxNavigationWrapper = document.createElement('section');
+            var productList = this.nodes.productTypesList.children;
+            for (var i = 0; i < productList.length; i++) {
+                console.log(productList[i].dataset.filterValue);
+                boxNavigationWrapper.appendChild(this.createCardEl(productList[i].dataset.filterValue,
+                    'https://raw.githubusercontent.com/MashaLarchenko/A-B_testing/test1/assets/SECORP/' + i + '.GIF'));
+            }
+            boxNavigationWrapper.classList.add('boxNavigation_container');
+            this.nodes.resultContainer.before(boxNavigationWrapper);
         }
 
-
-        boxNavigationWrapper.classList.add('boxNavigation_container');
-        var _this = this;
-
-        var description = this.createEl('p', "adversiting_description", _this.config.description,
-            'font-family: "Helvetica"; font-size: 14px; color: #e7e6e6;text-align: center; line-height: 20px;'
-        );
-
-        var button = this.createEl('button', "adversiting_btn", 'Contact now',
-            'font-family: "Helvetica"; font-size: 18px;color: #ffffff; line-height: 32px; height: 30px;background: #42b4e6; border-radius: 2px;'
-        );
-        adversitingContainer.style.cssText = 'width: 100%;display: flex;flex-direction: column; align-items: center;background-image: url("https://github.com/MashaLarchenko/A-B_testing/blob/test1/assets/Horizontal_Small_Image%20only-1x.png");';
-        adversitingContainer.appendChild(title);
-        adversitingContainer.appendChild(description);
-
-        adversitingContainer.appendChild(button);
-
-        _this.nodes.cardsList.after(adversitingContainer);
     },
 
     createCardEl: function (content, image) {
-        var boxNavigationCard  = document.createElement('div');
+        var boxNavigationCard = document.createElement('div');
         var img = document.createElement('img');
         var description = document.createElement('p');
+        boxNavigationCard.classList.add('boxNavigation_item');
         img.src = image;
         description.innerHTML = content;
         boxNavigationCard.appendChild(img);
         boxNavigationCard.appendChild(description);
-
+        console.log(boxNavigationCard, 'boxNavigationCard');
         return boxNavigationCard;
     },
+
+
+    // setObserver: function () {
+    //     console.log('OBS');
+    //     var createBoxNavigationBlock = this.createBoxNavigationBlock.bind(this);
+    //     var observer = new MutationObserver(createBoxNavigationBlock);
+    //     observer.observe(this.nodes.productTypesList, {
+    //         attributes: true,
+    //         childList: true,
+    //         subtree: true
+    //     });
+    // },
 
     init: function () {
         if (document.readyState !== 'loading') {
             this.getNodes();
-            this.createAdversitingBlock();
+            this.createBoxNavigationBlock();
+            // this.setObserver();
         } else {
             var _this = this;
             window.addEventListener('load', function () {
                 _this.getNodes();
-                _this.createAdversitingBlock();
+                _this.createBoxNavigationBlock();
+                // _this.setObserver();
             });
         }
     },
 };
 
-UXD_619.init();
+UXD_610.init();
