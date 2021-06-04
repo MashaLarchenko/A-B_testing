@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BD42CE4C-E688-4D87-BAD6-D62345DA12EC@2x</title>
+    <g id="Comparison" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_01_-Sticky-compare-bar-_-mini" transform="translate(-1291.000000, -746.000000)">
+            <g id="Group" transform="translate(1290.000000, 745.000000)">
+                <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                <g id="Close-Copy" transform="translate(2.000000, 2.000000)" stroke="#333333" stroke-linejoin="round">
+                    <g id="arrows-in" transform="translate(8.000000, 8.000000) rotate(90.000000) translate(-8.000000, -8.000000) ">
+                        <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                        <g id="Arrow-2" transform="translate(11.000000, 5.000000) rotate(180.000000) translate(-11.000000, -5.000000) translate(9.000000, 3.000000)" stroke-linecap="round">
+                            <polyline id="Path" points="1 0 4 0 4 3"></polyline>
+                            <line x1="0" y1="4" x2="4" y2="0" id="Path"></line>
+                        </g>
+                        <g id="Arrow-1" transform="translate(5.000000, 11.000000) scale(-1, -1) rotate(180.000000) translate(-5.000000, -11.000000) translate(3.000000, 9.000000)" stroke-linecap="round">
+                            <polyline id="Path" points="1 0 4 0 4 3"></polyline>
+                            <line x1="0" y1="4" x2="4" y2="0" id="Path"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
