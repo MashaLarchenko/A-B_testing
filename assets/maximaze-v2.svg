@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3D36E761-4E77-476E-9008-C50E0812687E@2x</title>
+    <g id="Comparison" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_02_-Sticky-compare-bar-_-mini" transform="translate(-1192.000000, -752.000000)">
+            <g id="Group" transform="translate(1191.000000, 751.000000)">
+                <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                <g id="arrows-out-(1)-copy-5" transform="translate(10.000000, 10.000000) rotate(90.000000) translate(-10.000000, -10.000000) translate(2.000000, 2.000000)" stroke="#333333" stroke-linejoin="round">
+                    <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                    <polyline id="Path" stroke-linecap="round" points="10 3 13 3 13 6"></polyline>
+                    <line x1="9" y1="7" x2="13" y2="3" id="Path" stroke-linecap="round"></line>
+                    <polyline id="Path" stroke-linecap="round" points="6 13 3 13 3 10"></polyline>
+                    <line x1="7" y1="9" x2="3" y2="13" id="Path" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
